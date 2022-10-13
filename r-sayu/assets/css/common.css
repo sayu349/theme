@@ -90,3 +90,13 @@ img {
     font-weight: bold;
     margin-top: 20px;
 }
+
+/*index.css*/
+.front-images {
+    height: calc(100vh - 110px);
+    background-image: url(/r-sayu/assets/images/front-background-iamge.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+
+}
