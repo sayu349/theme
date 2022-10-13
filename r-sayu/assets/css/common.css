@@ -91,12 +91,134 @@ img {
     margin-top: 20px;
 }
 
-/*index.css*/
-.front-images {
+.first-view {
     height: calc(100vh - 110px);
-    background-image: url(/r-sayu/assets/images/front-background-iamge.jpg);
+    background-image: url(../images/front-background-iamge.jpg);
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: right bottom;
     background-size: cover;
+    display: flex;
+    align-items: center;
+}
 
+/*index.css*/
+.first-view-text {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-bottom: 80px;
+    color: #ffffff;
+    text-shadow: 1px 1px 10px #050773;
+}
+
+.first-view-text h1 {
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 60px;
+    line-height: 72px;
+}
+
+.first-view-text p {
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 35px;
+    margin-top: 40px;
+}
+
+.first-view-text p span {
+    font-weight: bold;
+}
+
+.about-content {
+    background-color: #07246d;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.front-wordpress {
+    background-color: rgb(204, 204, 204);
+    padding: 20px;
+    background-image: url(../images/28redsugar720.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.front-wordpress-content {
+    width: 1500px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 26px;
+    background-color: rgb(54, 151, 184, 0.5);
+
+}
+
+.wordpress-logo {
+    width: 400px;
+}
+
+.worpdress {
+    color: #ffffff;
+    font-family: 'Kosugi Maru', sans-serif;   
+}
+
+.worpdress h2 {
+    font-size: 45px;
+    padding: 2px;
+    border-bottom: 1px solid #f8f8f8;
+}
+
+.wordpress-excerpt {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.wordpress-excerpt span {
+    font-weight: bold;
+}
+
+.new-article {
+    margin-top: 40px;
+    padding-bottom: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 1px solid #f8f8f8;
+}
+
+.new-article-title {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.new-article-excerpt {
+    margin-top: 18px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    border-bottom: 1px solid #f8f8f8;
+    line-height: 1.5;
+}
+
+.wordpress-botton {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.wordpress-botton-hover {
+    background-color: rgb(194, 188, 17, 0.5);
+    display: inline-block;
+    min-width: 180px;
+    font-size: 26px;
+    color: #000000;
+    font-weight: bold;
+    padding: 30px;
+    border-radius: 24px;
 }
