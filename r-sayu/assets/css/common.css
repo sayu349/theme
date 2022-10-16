@@ -77,6 +77,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 100px;
 }
 
 .footer-logo {
@@ -165,7 +166,7 @@ img {
 
 .worpdress {
     color: #ffffff;
-    font-family: 'Kosugi Maru', sans-serif;   
+    font-family: 'Kosugi Maru', sans-serif;
 }
 
 .worpdress h2 {
@@ -221,4 +222,236 @@ img {
     font-weight: bold;
     padding: 30px;
     border-radius: 24px;
+}
+
+/*archive.css*/
+.title {
+    height: 300px;
+    background-image: url(../images/front-background-iamge.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 10px #050773;
+}
+
+.title h1 {
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+.lead {
+    max-width: 1200px;
+    margin: 100px auto 0;
+}
+
+.lead p {
+    line-height: 2;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+.about-link-botton-area {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.about-link-botton {
+    background-color: #9ce1e3;
+    display: inline-block;
+    min-width: 180px;
+    line-height: 48px;
+    border-radius: 24px;
+    font-size: 14px;
+    font-family: 'Kosugi Maru', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.item-list-title {
+    margin-top: 100px;
+    background-color: #9ce1e3;
+    padding: 70px 0;
+}
+
+.item-list-title h2{
+    text-align: center;
+    font-family: 'Kosugi Maru', sans-serif;
+    color: #ffffff;
+    letter-spacing: 3px;
+}
+
+.item-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.item {
+    padding: 30px;
+    margin-left: 50px;
+    width: 350px;
+    background-color: #e1e1e1;
+    border-radius: 10px;
+    font-family: 'Kosugi Maru', sans-serif;
+    text-align: center;
+}
+
+.item:first-child {
+    margin-left: 0;
+}
+
+.item-image {
+    border-radius: 24px;
+}
+
+.item h2 {
+    margin-top: 20px;
+    letter-spacing: 3px;
+}
+
+.item p {
+    margin-top: 20px;
+    line-height: 1.4;
+}
+
+.item-link-botton-area {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.item-link-botton {
+    background-color: #9ce1e3;
+    display: inline-block;
+    min-width: 180px;
+    line-height: 48px;
+    border-radius: 24px;
+    font-size: 14px;
+    font-family: 'Kosugi Maru', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.about-me {
+    width: 1200px;
+    max-width: 90%;
+    background-color: #e1e1e1;
+    padding: 20px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Kosugi Maru', sans-serif;
+    border-radius: 24px;
+}
+
+.about-me h2 {
+    letter-spacing: 3px;
+}
+.about-me p {
+    margin-top: 10px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.about-me-flex {
+    display: flex;
+    margin-top: 20px;
+}
+
+.about-me-image {
+    display: block;
+    width: 300px;
+    max-width: 90%;
+    border-radius: 24px;
+}
+
+.about-me-image-ruins {
+    border-radius: 24px;
+}
+
+.about-me-text {
+    margin-left: 30px;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.about-me-botton-flex {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.about-me-botton-area {
+    text-align: center;
+    margin-left: 20px;
+}
+
+.about-me-botton {
+    background-color: #9ce1e3;
+    display: inline-block;
+    min-width: 180px;
+    line-height: 48px;
+    border-radius: 24px;
+    font-size: 14px;
+    font-family: 'Kosugi Maru', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+/*== ボタン共通設定 */
+.btn{
+    /*アニメーションの起点とするためrelativeを指定*/
+    position: relative;
+	overflow: hidden;
+    /*ボタンの形状*/
+	display: inline-block;
+   	outline: none;
+    border: 3px solid #9be0fa;
+    /*アニメーションの指定*/   
+    transition: ease .2s;
+}
+
+/*ボタン内spanの形状*/
+.btn span {
+	position: relative;
+	z-index: 3;/*z-indexの数値をあげて文字を背景よりも手前に表示*/
+	color:#fff;
+}
+
+.btn:hover span{
+	color:#000;
+}
+
+/*== 背景が流れる（左から右） */
+.bgleft:before {
+ 	content: '';
+    /*絶対配置で位置を指定*/
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	z-index: 2;
+    /*色や形状*/
+ 	background:#fff;/*背景色*/
+ 	width: 100%;
+	height: 100%;
+    /*アニメーション*/
+ 	transition: transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+ 	transform: scale(0, 1);
+	transform-origin: right top;
+}
+
+/*hoverした際の形状*/
+.bgleft:hover:before{
+	transform-origin:left top;
+	transform:scale(1, 1);
 }
