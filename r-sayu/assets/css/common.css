@@ -33,7 +33,6 @@ img {
 
 
 /*header&footer*/
-
 .header-inner {
     max-width: 1200px;
     height: 110px;
@@ -71,7 +70,7 @@ img {
 
 .footer {
     color: #ffffff;
-    background-color: #24211b;
+    background-color: #9ce1e3;
     padding-top: 30px;
     padding-bottom: 15px;
     display: flex;
@@ -243,7 +242,10 @@ img {
     font-family: 'Kosugi Maru', sans-serif;
     font-size: 32px;
     font-weight: bold;
-    letter-spacing: 10px;
+}
+
+.title p {
+    margin-top: 20px;
 }
 
 .lead {
@@ -454,4 +456,12 @@ img {
 .bgleft:hover:before{
 	transform-origin:left top;
 	transform:scale(1, 1);
+}
+
+/*arhive.css*/
+.breadcrumb {
+    background-color: #e1e1e1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
 }
