@@ -2,13 +2,13 @@ on:
   push:
     branches:
       - master
-name: master
+name: Deploy
 jobs:
-  web-deploy:
+  FTP-Deploy-Action:
     name: FTP-Deploy-Action
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.3.2
+      - uses: actions/checkout@master
       - name: FTP-Deploy-Action
         uses: SamKirkland/FTP-Deploy-Action@2.0.0
         env:
@@ -16,4 +16,4 @@ jobs:
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
           LOCAL_DIR: ./
-          REMOTE_DIR: ~/r-sayu.com/public_html/wp-content/themes/
+          REMOTE_DIR: /r-sayu.com/public_html/wp-content/themes/sample
